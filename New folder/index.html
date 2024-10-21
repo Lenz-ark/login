@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Login</title>
+    <style>
+        body {
+            font-family: 'planex';
+            background-image: url('image/wp1889551-anfield-wallpapers.jpg'); /* Ganti dengan path gambar Anfield */
+            background-size: cover; /* Gambar akan menutupi seluruh background */
+            background-position: center; /* Menempatkan gambar di tengah */
+            background-repeat: no-repeat; /* Gambar tidak akan diulang */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.218); /* Menambahkan transparansi */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.615);
+            width: 350px;
+            text-align: center;
+            backdrop-filter: blur;
+        }
+
+        .login-container img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #d00027;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 92%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #d00027;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d00027;
+            margin: 20px 0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #b30021;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        .footer-text a {
+            color: #d00027;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Tambahkan logo Liverpool -->
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool Logo">
+        <h2>Liverpool FC Fans Login</h2>
+
+        <!-- Form login -->
+        <form action="login.html" method="POST">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Footer text -->
+        <p class="footer-text">Belum punya akun? <a href="daftar.html">Daftar di sini</a></p>
+    </div>
+</body>
+</html>
